@@ -10,7 +10,6 @@ class Card:
         elif other.rank > self.rank:
             return False
 
-
     def __str__(self):
         values = ["Ace", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten",
                   "Jack", "Queen", "King"]
