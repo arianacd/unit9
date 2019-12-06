@@ -22,7 +22,6 @@ class Pack:
             print(member.get_name())
 
     def new_leader(self, index):
-
         leader_dog = self.members[index]
         self.leader_index = index
         return leader_dog.get_name()
