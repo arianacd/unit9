@@ -10,11 +10,13 @@ class Card:
         elif other.rank > self.rank:
             return False
         else:
-            if self.suit == "Spades":
+            order = ["Clubs", "Diamonds", "Hearts", "Spades"]
+            index_user = order.index(self.suit)
+            index_dealer = order.index(other.suit)
+            if index_user > index_dealer:
                 return True
-            elif self.suit == "Hearts":
-                return
-
+            else:
+                return False
 
     def __str__(self):
         values = ["Ace", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten",
